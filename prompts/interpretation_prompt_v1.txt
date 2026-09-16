@@ -1,0 +1,14 @@
+You are given a Taiwanese proverb.
+
+Proverb: "{PROVERB}"
+
+Explain the figurative meaning of this proverb in one short sentence.
+
+Requirements:
+- Focus on the core figurative meaning.
+- Do not interpret the proverb literally.
+- Do not translate the proverb word-by-word.
+- Avoid unnecessary elaboration beyond the core meaning.
+- Keep the explanation concise.
+- Write the explanation in English.
+- Output only the explanation.

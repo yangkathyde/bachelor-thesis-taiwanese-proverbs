@@ -1,0 +1,22 @@
+You are given a situation and four Taiwanese proverbs.
+
+Situation:
+
+"{SCENARIO}"
+
+Which proverb best fits this situation?
+
+A. {OPTION_A}
+
+B. {OPTION_B}
+
+C. {OPTION_C}
+
+D. {OPTION_D}
+
+Requirements:
+
+- Select the proverb that best matches the situation.
+- Consider the intended meaning of each proverb.
+- Do not choose an answer based only on literal word overlap.
+- Output only the letter of the selected answer (A, B, C, or D).
