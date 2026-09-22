@@ -22,14 +22,13 @@ The study evaluates four large language models (LLMs) on two tasks involving Tai
 │       ├── interpretation_friedman_test.xlsx
 │       ├── interpretation_posthoc_wilcoxon.xlsx
 │       ├── context_application_cochran_q_test.xlsx
-│       └── context_application_posthoc_mcnemar.xlsx
+│       ├── context_application_posthoc_mcnemar.xlsx
+│       └── open_vs_closed_source_comparison.xlsx
 │
 ├── results/
 │   ├── interpretation_bertscore_results.xlsx
 │   ├── interpretation_model_performance_summary.xlsx
 │   ├── context_application_model_performance_summary.xlsx
-│   ├── interpretation_open_vs_closed_source_comparison.xlsx
-│   └── context_application_open_vs_closed_source_comparison.xlsx
 │
 ├── prompts/
 │   ├── interpretation_prompt_v1.txt
@@ -140,21 +139,12 @@ data/statistical_tests/
 
 ### Open-Source and Closed-Source Models
 
-A descriptive comparison was also conducted between open-source and closed-source models.
+A descriptive comparison was conducted between open-source and closed-source models across the Interpretation Task and the Context Application Task.
 
-The Interpretation Task comparison is provided in:
-
-```text
-results/interpretation_open_vs_closed_source_comparison.xlsx
-```
-
-The Context Application comparison is provided in:
+The comparison results are provided in:
 
 ```text
-results/context_application_open_vs_closed_source_comparison.xlsx
-```
-
-These comparisons are descriptive because only two open-source and two closed-source models were included in the study.
+data/statistical_tests/open_vs_closed_source_comparison.xlsx
 
 ---
 
