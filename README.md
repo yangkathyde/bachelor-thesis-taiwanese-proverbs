@@ -1,6 +1,6 @@
 # Evaluating LLMs on Taiwanese Proverbs
 
-This repository contains the datasets, prompts, model outputs, and statistical analyses used in the Bachelor's thesis:
+This repository contains the datasets, prompts, model outputs, results, and statistical analyses used in the Bachelor's thesis:
 
 **Evaluating LLMs on Taiwanese Proverbs: A Study of Interpretation and Semantic Understanding**
 
@@ -28,6 +28,8 @@ The Interpretation Task evaluates whether an LLM can explain the intended figura
 - **Evaluation metric:** BERTScore-F1
 - **Reference:** Manually reviewed English interpretations based on Taiwanese dictionary definitions
 
+The detailed BERTScore results for each proverb and model are provided in the `results/` directory, together with model-level performance summaries.
+
 ### 2. Context Application Task
 
 The Context Application Task evaluates whether an LLM can select the Taiwanese proverb that best fits a given conversational situation.
@@ -38,6 +40,8 @@ The Context Application Task evaluates whether an LLM can select the Taiwanese p
 - **Task format:** Select one proverb that best matches the given context
 
 The 100 proverbs used for this task were randomly sampled from the full set of 468 proverbs using a fixed random seed (`random_state = 42`).
+
+The model-level accuracy results are provided in the `results/` directory.
 
 ## Repository Structure
 
@@ -50,7 +54,13 @@ The 100 proverbs used for this task were randomly sampled from the full set of 4
 │       ├── interpretation_friedman_test.xlsx
 │       ├── interpretation_posthoc_wilcoxon.xlsx
 │       ├── context_application_cochran_q_test.xlsx
-│       └── context_application_posthoc_mcnemar.xlsx
+│       ├── context_application_posthoc_mcnemar.xlsx
+│       └── open_vs_closed_source_comparison.xlsx
+│
+├── results/
+│   ├── interpretation_bertscore_results.xlsx
+│   ├── interpretation_model_performance_summary.xlsx
+│   └── context_application_model_performance_summary.xlsx
 │
 ├── prompts/
 │   ├── interpretation_prompt_v1.txt
