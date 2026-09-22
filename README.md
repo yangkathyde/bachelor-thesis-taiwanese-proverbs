@@ -6,8 +6,8 @@ This repository contains the datasets, prompts, model outputs, evaluation result
 
 The study evaluates four large language models (LLMs) on two tasks involving Taiwanese proverbs:
 
-1. **Interpretation Task**: evaluating the models' ability to interpret Taiwanese proverbs in English.
-2. **Context Application Task**: evaluating the models' ability to select appropriate Taiwanese proverbs for given conversational contexts.
+1. **Interpretation Task**: Evaluating the models' ability to interpret Taiwanese proverbs in English.
+2. **Context Application Task**: Evaluating the models' ability to select appropriate Taiwanese proverbs for given conversational contexts.
 
 ---
 
@@ -28,7 +28,7 @@ The study evaluates four large language models (LLMs) on two tasks involving Tai
 ├── results/
 │   ├── interpretation_bertscore_results.xlsx
 │   ├── interpretation_model_performance_summary.xlsx
-│   ├── context_application_model_performance_summary.xlsx
+│   └── context_application_model_performance_summary.xlsx
 │
 ├── prompts/
 │   ├── interpretation_prompt_v1.txt
@@ -143,35 +143,34 @@ A descriptive comparison was conducted between open-source and closed-source mod
 
 The comparison results are provided in:
 
-```text
-data/statistical_tests/open_vs_closed_source_comparison.xlsx
+`data/statistical_tests/open_vs_closed_source_comparison.xlsx`
 
 ---
 
 ## Prompts
 
-The `prompts/` directory contains the prompts used for the two evaluation tasks.
+The `prompts/` directory contains the prompts used for the two evaluation tasks:
 
-- `interpretation_prompt_v1.txt`: prompt used for the Interpretation Task.
-- `context_application_prompt_v1.txt`: prompt used for the Context Application Task.
-- `context_application_prompts_proverbs_001_100.xlsx`: prompts and conversational contexts for the 100 Context Application questions.
+- `interpretation_prompt_v1.txt`: Prompt used for the Interpretation Task.
+- `context_application_prompt_v1.txt`: Prompt used for the Context Application Task.
+- `context_application_prompts_proverbs_001_100.xlsx`: Prompts and conversational contexts for the 100 Context Application questions.
 
 ---
 
 ## Model Outputs
 
-The `model_outputs/` directory contains the raw model-generated responses used in the evaluation.
+The `model_outputs/` directory contains the raw model-generated responses used in the evaluation:
 
-- `interpretation_model_outputs.xlsx`: model outputs for the Interpretation Task.
-- `context_application_model_outputs.xlsx`: model outputs for the Context Application Task.
+- `interpretation_model_outputs.xlsx`: Model outputs for the Interpretation Task.
+- `context_application_model_outputs.xlsx`: Model outputs for the Context Application Task.
 
 ---
 
 ## Notebooks
 
-The `notebooks/` directory contains the notebook used for the statistical significance tests reported in the thesis.
+The `notebooks/` directory contains the notebook used for the statistical significance tests reported in the thesis:
 
-- `Statistical_significance_tests.ipynb`: implements the Friedman test and post-hoc Wilcoxon signed-rank tests for the Interpretation Task, as well as Cochran's Q test and post-hoc exact McNemar tests for the Context Application Task. Holm correction was applied for multiple pairwise comparisons.
+- `Statistical_significance_tests.ipynb`: Implements the Friedman test and post-hoc Wilcoxon signed-rank tests for the Interpretation Task, as well as Cochran's Q test and post-hoc exact McNemar tests for the Context Application Task (with Holm correction applied for multiple pairwise comparisons).
 
 ---
 
@@ -187,12 +186,8 @@ The repository is intended to provide the materials necessary to inspect and rep
 
 ## Thesis Information
 
-**Title:** *Evaluating LLMs on Taiwanese Proverbs: A Study of Interpretation and Semantic Understanding*
-
-**Author:** KaiHui Yang
-
-**Supervisor:** Dr. Çağrı Çöltekin
-
-**Institute:** Seminar für Sprachwissenschaft, University of Tübingen
-
-**Date:** September 23, 2026
+- **Title:** *Evaluating LLMs on Taiwanese Proverbs: A Study of Interpretation and Semantic Understanding*
+- **Author:** KaiHui Yang
+- **Supervisor:** Dr. Çağrı Çöltekin
+- **Institute:** Seminar für Sprachwissenschaft, University of Tübingen
+- **Date:** September 23, 2026
